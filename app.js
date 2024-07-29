@@ -10,10 +10,14 @@ const app = express();
 
 // Database connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'C237_L11_usersdb'
+    host: 'sql.freedb.tech',
+    user: 'freedb_ryanlow',
+    password: '!h!GWVq3U*T&rCP',
+    database: 'freedb_ryanlow'
+    // host: 'localhost',
+    // user: 'root',
+    // password: '',
+    // database: 'C237_L11_usersdb'
 });
 
 db.connect((err) => {
