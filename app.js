@@ -1,7 +1,7 @@
 const express = require('express');
 const mysql = require('mysql2');
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 80;
 
 //******** TODO: Insert code to import 'express-session' *********//
 const session = require('express-session');
