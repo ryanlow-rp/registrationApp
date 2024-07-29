@@ -1,6 +1,8 @@
 const express = require('express');
 const mysql = require('mysql2');
 
+const PORT = process.env.PORT;
+
 //******** TODO: Insert code to import 'express-session' *********//
 const session = require('express-session');
 
@@ -157,6 +159,6 @@ app.get('/logout', (req, res) => {
 });
 
 // Starting the server
-app.listen(3000, () => {
-    console.log('Server started on port 3000');
+app.listen(PORT, () => {
+    console.log('Server started on port ' + PORT);
 });
